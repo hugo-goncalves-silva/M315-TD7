@@ -32,6 +32,6 @@ public class Orc extends Personnage {
 		}
 		this.getSac().add(this.getMain());
 		this.setMain(arme);
-		System.out.println(  this.getName()+" a récuperé "+arme+" et a rangé " + this.getSac().get(this.getSac().size()-1)+" dans son sac") ;
+		System.out.println(  this.getName()+" a récuperé "+arme.getClass()+" et a rangé " + this.getSac().get(this.getSac().size()-1)+" dans son sac\n") ;
 	}
 }
