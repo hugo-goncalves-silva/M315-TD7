@@ -37,13 +37,10 @@ public class Main {
 		azag.recupArme(excalibur);
 		azag.recupArme(kradul);
 		azag.attaquer(Billy);
-		azag.attaquer(Billy);
 		
 		azag.attaquer(Machausset);
 		azag.attaquer(Machausset);
 		
-
-		System.out.println(Billy.getVitalite());
 	}
 
 }
