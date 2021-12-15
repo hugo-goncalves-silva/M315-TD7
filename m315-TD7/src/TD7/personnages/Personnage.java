@@ -6,7 +6,7 @@ import TD7.armes.Arme;
 
 public abstract class Personnage implements recupArmes{
 		private String name;
-		private int vitalité;
+		private int vitalite;
 		private ArrayList<Arme> sac;
 		private Arme main;
 
@@ -25,7 +25,7 @@ public abstract class Personnage implements recupArmes{
 			this.name = name;
 			this.sac = new ArrayList<Arme>();
 			this.main = main;
-			this.vitalité = 100;
+			this.vitalite = 100;
 		}
 
 
@@ -37,10 +37,10 @@ public abstract class Personnage implements recupArmes{
 	public void attaquer(Personnage p) {
 		int degats;
 		if((degats=this.getForce() - p.getProtection())>0) {
-			p.vitalité -= degats;
-			System.out.println( "L'utilisateur demande à "+ this.name +" d'attaquer "+p.name+", qui perd "+ degats +" points de vitalité");
+			p.vitalite -= degats;
+			System.out.println( "L'utilisateur demande Ã  "+ this.name +" d'attaquer "+p.name+", qui perd "+ degats +" points de vitalitÃ©");
 		}else {
-			System.out.println( "L'utilisateur demande à "+ this.name +" d'attaquer "+p.name+", cela n'as aucun effet");
+			System.out.println( "L'utilisateur demande Ã  "+ this.name +" d'attaquer "+p.name+", cela n'as aucun effet");
 		}
 	}
 
@@ -69,10 +69,10 @@ public abstract class Personnage implements recupArmes{
 
 
 	/**
-	 * @return the vitalité
+	 * @return the vitalitï¿½
 	 */
-	public int getVitalité() {
-		return vitalité;
+	public int getVitalite() {
+		return vitalite;
 	}
 
 
@@ -80,10 +80,10 @@ public abstract class Personnage implements recupArmes{
 
 
 	/**
-	 * @param vitalité the vitalité to set
+	 * @param vitalitï¿½ the vitalitï¿½ to set
 	 */
-	public void setVitalité(int vitalité) {
-		this.vitalité = vitalité;
+	public void setVitalite(int vitalite) {
+		this.vitalite = vitalite;
 	}
 
 

@@ -16,7 +16,7 @@ public class FabriqueArme {
 		this.stock = stock;
 	}
 	
-	public Arme createArme(String nom, String type) {
+	public Arme createArme(String type, String nom) {
 		switch(type) {
 		case "EPEE" :
 			stock.put(nom, new TD7.armes.Epee());

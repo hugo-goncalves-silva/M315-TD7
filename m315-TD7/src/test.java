@@ -1,13 +1,9 @@
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
+/*import java.lang.AssertionError;
 import TD7.armes.Arme;
 import TD7.armes.Epee;
 import TD7.fabrique.FabriqueArme;
 import TD7.personnages.Orc;
 import TD7.personnages.Personnage;
-import junit.framework.Assert;
 
 class test {
 
@@ -23,4 +19,4 @@ class test {
 		Assert.assertTrue(azag.getMain() instanceof Epee);
 	}
 
-}
+}*/

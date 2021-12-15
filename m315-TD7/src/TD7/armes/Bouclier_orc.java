@@ -5,8 +5,5 @@ public class Bouclier_orc extends Bouclier{
 		super();
 	}
 
-	public int getProtection() {
-		this.setProtection(getProtection()+2);
-		return super.getProtection();
-	}
+
 }

@@ -27,6 +27,6 @@ public class Tauren extends Personnage {
 	public void recupArme(Arme arme) {
 		this.getSac().add(this.getMain());
 		this.setMain(arme);
-		System.out.println( this.getName()+" a récuperé "+arme+" et a rangé " + this.getSac().get(this.getSac().size()-1)+" dans son sac") ;
+		System.out.println(  this.getName()+" a rÃ©cuperÃ© "+arme+" et a rangÃ© " + this.getSac().get(this.getSac().size()-1)+" dans son sac") ;
 	}
 }

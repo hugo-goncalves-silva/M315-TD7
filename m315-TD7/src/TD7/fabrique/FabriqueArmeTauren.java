@@ -17,7 +17,7 @@ public class FabriqueArmeTauren extends FabriqueArme{
 		this.stock = stock;
 	}
 
-	public Arme createArme(String nom, String type) {
+	public Arme createArme(String type, String nom) {
 		switch(type) {
 		case "EPEE_TAUREN" :
 			stock.put(nom,new TD7.armes.Epee_tauren());

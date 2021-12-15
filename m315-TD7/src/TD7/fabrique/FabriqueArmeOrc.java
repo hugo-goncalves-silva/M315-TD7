@@ -19,7 +19,7 @@ public class FabriqueArmeOrc extends FabriqueArme {
 		this.stock = stock;
 	}
 
-	public Arme createArme(String nom, String type) {
+	public Arme createArme(String type, String nom) {
 		switch (type) {
 		case "EPEE_ORC":
 			stock.put(nom, new TD7.armes.Epee_orc());
@@ -33,5 +33,10 @@ public class FabriqueArmeOrc extends FabriqueArme {
 
 	public Arme getArme(String nom) {
 		return this.stock.get(nom);
+	}
+
+	public String getStockString(){
+		System.out.println(this.stock.values());
+		return "stop";
 	}
 }

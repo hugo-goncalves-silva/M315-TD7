@@ -6,14 +6,10 @@ import TD7.personnages.*;
 
 public class Main {
 
-	public Main() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		//Création des personnages;
+		//CrÃ©ation des personnages;
 		Personnage Tholfdir = new Orc("Tholfdir",20);
 		Personnage Machausset = new Tauren("Machausset",100);
 		Personnage Billy = new Elfe("Billy","lente");
@@ -31,28 +27,23 @@ public class Main {
 		FabriqueArmeOrc wf1 = new FabriqueArmeOrc();
 		FabriqueArmeTauren wf2 = new FabriqueArmeTauren();
 		Arme excalibur = wf.createArme("EPEE", "EXCALIBUR");
-		//System.out.println(excalibur.getForce());
 		Arme kradul = wf1.createArme("EPEE_ORC", "KRADUL");
 		Arme zemmour = wf2.createArme("BOUCLIER_TAUREN", "ZEMMOUR");
 
 		
 		
-		System.out.println(wf.getStock().toString());
-		System.out.println(wf1.getStock().toString());
-		System.out.println(wf2.getStock().toString());
 		
-		//Machausset.recupArme(zemmour);
+		Machausset.recupArme(zemmour);
 		azag.recupArme(excalibur);
-		//azag.recupArme(kradul);
-		
+		azag.recupArme(kradul);
 		azag.attaquer(Billy);
-		//azag.attaquer(Billy);
+		azag.attaquer(Billy);
 		
-		//azag.attaquer(Machausset);
-		//azag.attaquer(Machausset);
+		azag.attaquer(Machausset);
+		azag.attaquer(Machausset);
 		
 
-		System.out.println(Billy.getVitalité());
+		System.out.println(Billy.getVitalite());
 	}
 
 }
