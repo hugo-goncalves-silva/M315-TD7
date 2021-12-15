@@ -7,6 +7,7 @@ public class Bouclier_tauren extends Bouclier{
 	}
 	
 	public int getProtection(){
+		super.setProtection(super.getProtection()+2);
 		return super.getProtection();
 	}
 }
